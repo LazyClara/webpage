@@ -1,0 +1,103 @@
+{% extends "index.html" %}
+
+{% block title %}
+    Cakes for sales
+{% endblock %}
+
+{% block main %}
+    <h2>Cakes for sales</h2>
+    <div class="cakecontainer">
+    <ul class="nav">
+        <li class="nav-item">
+            <a href="/special">
+            <img src="{{url_for('static', filename='specialOccasion300.jpg')}}" alt="">
+            <p>Speciality  cakes</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/flavoured">
+            <img src="{{url_for('static', filename='lemonCake300.jpg')}}" alt="">
+            <p>Flavored cakes</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/cheesecakes">
+            <img src="{{url_for('static', filename='cheeseCake300.jpg')}}" alt="">
+            <p>cheesecakes</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/brownies">
+            <img src="{{url_for('static', filename='brownie300.jpg')}}" alt="">
+            <p>Brownies</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/cupcakes">
+            <img src="{{url_for('static', filename='cupcake300.jpg')}}" alt="">
+            <p>Cupcakes</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/macarons">
+            <img src="{{url_for('static', filename='macaron300.jpg')}}" alt="">
+            <p>Macarons</p>
+            </a>
+        </li>
+    </ul>
+    </div>
+<hr>
+    <h2>Pricing</h2>
+    <div class="container">
+        <table class="table">
+            <thread>
+                <tr>
+                    <th class="text-start">Cake size</th>
+                    <th class="text">Suitable for</th>
+                    <th class="text-end">Price</th>
+                </tr>
+            </thread>
+            <tbody>
+                    <tr>
+                        <td class="text-start">Small</td>
+                        <td class="text">8-10 people</td>
+                        <td class="text-end">$50.00</td>
+                    </tr>
+                    <tr>
+                        <td class="text-start">Medium</td>
+                        <td class="text">10-12 people</td>
+                        <td class="text-end">$60.00</td>
+                    </tr>
+                    <tr>
+                        <td class="text-start">Large</td>
+                        <td class="text">16-20 people</td>
+                        <td class="text-end">$100.00</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+<hr>
+        <h3 class="text-center">Ordering Form</h3>
+        <form action="https://formsubmit.co/02323546a8c23f6a4b88783ec9ebabbe" method="post" enctype=”multipart/form-datan” name=”EmailForm”>
+            <div class="mb-3">
+                <input autocomplete="off" class="form-control mx-auto w-auto" id="name" name="name" placeholder="Name" type="text">
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="email" name="email" placeholder="Email" type="email">
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="phone" name="phone" placeholder="Phone" type="phone">
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control mx-auto w-auto" id="cale" name="cake" placeholder="Cake required" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <p class="text-center"> Date required</p>
+                <input class="form-control mx-auto w-auto" id="date" name="date" placeholder="Date required" type="date">
+            </div>
+            <div class="text-center">
+            <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+
+{% endblock %}
