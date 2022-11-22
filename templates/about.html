@@ -1,0 +1,51 @@
+{% extends "index.html" %}
+
+{% block title %}
+    About Us
+{% endblock %}
+
+{% block main %}
+    <!-- ?-->
+    <div class="burntred">
+        <h1>About Special Cakes for All Occasions</h1>
+        </div>
+        <div class="navyblue">
+        <h2><p>Special Cakes for All Occasions started a year ago by the store owner, Sam Rice, who wanted to share their love of baking with the world. Come and taste all the delightful cakes!</p></h2>
+        </div>
+    </div>
+
+    <figure class="mx-auto">
+        <img src="{{url_for('static', filename='about_us_975.jpg')}}" class="rounded mx-auto d-block" alt="banner">
+        <figcaption class="figure-caption text-center">Assortment of pieces of cake. https://www.freepik.com/free-vector/fruit-cake_5402352.htm</figcaption>
+      </figure>
+<hr>
+    <div class="text-center">
+        <h3><p> Job opportunities</p><h3>
+        <h4><p>Come and work for us!</p></h4>
+    </div>
+
+    <div class="container">
+    <table class="table">
+        <thread>
+            <tr>
+                <th class="text-start">Job title</th>
+                <th class="text">Job description</th>
+                <th class="text-end">Salary</th>
+            </tr>
+        </thread>
+        <tbody>
+            <tr>
+                <td class="text-start">Pastry chef</td>
+                <td class="text">Specialises in pastry desserts. Must have four years of experience.</td>
+                <td class="text-end">$50,000 p.a.</td>
+            </tr>
+            <tr>
+                <td class="text-start">Sales assistant</td>
+                <td class="text">Serves customers in the shop and operates the cash register.</td>
+                <td class="text-end">$25,000 p.a.</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+{% endblock %}
