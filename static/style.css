@@ -1,0 +1,56 @@
+/* Provided file */
+
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-size: 1em;
+	line-height: 1.3em;
+	color: #0C243C
+}
+/* classes */
+.burntred {
+	color: #E94D40;
+}
+.navyblue {
+	color: #0C243C;
+}
+.specialcakesfont {
+	font-family: Arial, sans-serif;
+}
+.floatleft {
+    float: left;
+}
+.floatright {
+    float: right;
+}
+.clearboth {
+    clear: both;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main {
+	color: #0C243C;
+	margin-left: auto;
+    margin-right: auto;
+	text-align: center
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cakecontainer {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 15px;
+}
